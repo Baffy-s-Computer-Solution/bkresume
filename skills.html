@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Skills - Bafokeng Khoali">
+    <meta name="description" content="Technical skills and expertise in full-stack development, AI/ML, and modern technologies.">
+    
+    <title>Skills - Bafokeng Khoali</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/shared-styles.css">
+
+    <style>
+        .skill-level {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .skill-name {
+            min-width: 150px;
+            font-weight: 500;
+        }
+
+        .skill-bar {
+            flex: 1;
+            height: 8px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color), #5649d8);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .skill-percent {
+            min-width: 40px;
+            text-align: right;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-code"></i> Bafokeng Khoali
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link active">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Technical Skills</h1>
+            <h2>Expertise and Proficiencies</h2>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="skills-overview">
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Frontend Development</h3>
+                        <p>Modern web interfaces with React, Vue.js, and vanilla JavaScript. Focus on responsive design and user experience.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend Development</h3>
+                        <p>Robust server-side applications with Node.js, Express, Python, and FastAPI. Database design and API development.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases</h3>
+                        <p>Database design, optimization, and management. Experience with relational and NoSQL databases.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Machine learning model development, feature engineering, and deployment of intelligent systems.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">SHAP</span>
+                            <span class="tech-tag">LIME</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-cube"></i></div>
+                        <h3>DevOps & Tools</h3>
+                        <p>Containerization, version control, CI/CD pipelines, and deployment strategies.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-tools"></i></div>
+                        <h3>IT & Systems</h3>
+                        <p>System administration, network configuration, hardware support, and IT infrastructure management.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Windows</span>
+                            <span class="tech-tag">Networking</span>
+                            <span class="tech-tag">Administration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill-levels" class="bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Proficiency Levels</h2>
+                    <p>Technical expertise by category</p>
+                </div>
+
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <h3 style="margin-bottom: 20px; color: var(--secondary-color);">Programming Languages</h3>
+                    <div class="skill-level">
+                        <div class="skill-name">JavaScript/TypeScript</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                        <div class="skill-percent">95%</div>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                        <div class="skill-percent">88%</div>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-name">HTML/CSS</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                        <div class="skill-percent">92%</div>
+                    </div>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--secondary-color);">Frameworks & Libraries</h3>
+                    <div class="skill-level">
+                        <div class="skill-name">React</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                        <div class="skill-percent">92%</div>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-name">Node.js/Express</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                        <div class="skill-percent">88%</div>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-name">FastAPI/Flask</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        <div class="skill-percent">85%</div>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-name">Machine Learning</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+                        <div class="skill-percent">82%</div>
+                    </div>
+
+                    <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--secondary-color);">Tools & Platforms</h3>
+                    <div class="skill-level">
+                        <div class="skill-name">Git/GitHub</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-name">Docker</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                    <div class="skill-level">
+                        <div class="skill-name">Firebase/Cloud</div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
+                        <div class="skill-percent">78%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="bg-primary">
+            <div class="container">
+                <div class="section-title" style="color: white;">
+                    <h2 style="color: white;">Areas of Expertise</h2>
+                    <p style="opacity: 0.95;">What I specialize in and can help you with</p>
+                </div>
+                <div class="row" style="color: white;">
+                    <div style="padding: 20px; text-align: center;">
+                        <h3><i class="fas fa-layer-group"></i> Full-Stack Development</h3>
+                        <p>End-to-end web application development from frontend to backend deployment.</p>
+                    </div>
+                    <div style="padding: 20px; text-align: center;">
+                        <h3><i class="fas fa-chart-line"></i> Data Science & Analytics</h3>
+                        <p>Data analysis, visualization, and machine learning model development.</p>
+                    </div>
+                    <div style="padding: 20px; text-align: center;">
+                        <h3><i class="fas fa-mobile-alt"></i> Mobile Apps</h3>
+                        <p>Cross-platform mobile application development with modern frameworks.</p>
+                    </div>
+                    <div style="padding: 20px; text-align: center;">
+                        <h3><i class="fas fa-cloud"></i> Cloud Architecture</h3>
+                        <p>Designing and deploying scalable cloud-based solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social-links">
+                <a href="https://github.com/Bafokengbaffy" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bafokeng-khoali-5933351b1/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://web.facebook.com/thabo.khosi.146" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/26663210786" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:khoalibafokeng6@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>Ready to collaborate on your next project or discuss opportunities.</p>
+            <p class="copyright">&copy; <span id="year"></span> Bafokeng Khoali. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/shared-nav.js"></script>
+</body>
+
+</html>
