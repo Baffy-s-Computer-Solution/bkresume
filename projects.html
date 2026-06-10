@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Projects - Bafokeng Khoali">
-    <meta name="description" content="Featured projects showcasing full-stack development, AI/ML systems, and innovative solutions.">
+    <meta name="description" content="Featured work including secure web platforms, AI/ML services, pen testing tooling, and production-ready digital systems.">
+    <meta name="keywords" content="projects, portfolio, security, pen testing, AI, machine learning, web development, Career Connect">
+    <meta name="theme-color" content="#3b3f87">
     
     <title>Projects - Bafokeng Khoali</title>
     
@@ -29,9 +31,10 @@
                 <li><a href="skills.html" class="nav-link">Skills</a></li>
                 <li><a href="projects.html" class="nav-link active">Projects</a></li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="documents.html" class="nav-link">Documents</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <button class="mobile-toggle">
+            <button class="mobile-toggle" title="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -57,69 +60,83 @@
                 </div>
 
                 <div class="row">
-                    <!-- Project 1 -->
                     <div class="card">
-                        <h3><i class="fas fa-taxi text-primary"></i> EasyGo - Ride-Hailing Platform</h3>
-                        <p class="text-muted" style="margin-bottom: 12px;">Full-Stack Application with AI/ML</p>
-                        <p>Comprehensive ride-hailing platform with real-time tracking, multi-user dashboards (Rider, Driver, Admin), AI-powered predictions, and fraud detection.</p>
+                        <h3><i class="fas fa-network-wired text-primary"></i> Career Connect Lesotho</h3>
+                        <p class="text-muted" style="margin-bottom: 12px;">Live Career Platform | Private Repo Available</p>
+                        <p>Production-ready career matching platform with secure user journeys, employer onboarding, and intelligent candidate placement.</p>
+                        <div class="tech-tags" style="margin: 15px 0;">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: var(--text-light);"><strong>Highlights:</strong> Live deployment, secure access, performance monitoring, and seamless candidate matching.</p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <a href="https://career-connect-lesotho.web.app/" class="btn btn-primary btn-small" target="_blank">
+                                <i class="fas fa-globe"></i> Live App
+                            </a>
+                            <a href="documents.html#live-docs" class="btn btn-outline btn-small">
+                                View Docs
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-shield-alt text-primary"></i> Kali Linux Web Pen Test Scripts</h3>
+                        <p class="text-muted" style="margin-bottom: 12px;">Web & Network Pen Testing Automation</p>
+                        <p>Curated Kali Linux scripts for secure web testing, reconnaissance, and network-hardening workflows.</p>
+                        <div class="tech-tags" style="margin: 15px 0;">
+                            <span class="tech-tag">Kali Linux</span>
+                            <span class="tech-tag">Bash</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: var(--text-light);"><strong>Features:</strong> Automated scans, script libraries, network exploitation guidance, and documentation-ready outputs.</p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <a href="https://github.com/bafokengBaffy/kali-linux-web-pen-test-scripts" class="btn btn-primary btn-small" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-cloud text-primary"></i> AI Backend API & Docs</h3>
+                        <p class="text-muted" style="margin-bottom: 12px;">Production AI API Deployment</p>
+                        <p>Secure machine learning backend supporting live prediction endpoints and clear developer documentation.</p>
+                        <div class="tech-tags" style="margin: 15px 0;">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">Deployment</span>
+                        </div>
+                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: var(--text-light);"><strong>Live URLs:</strong> /health, /predict, /docs, /openapi.json.</p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <a href="https://bafokengkhoali-ai-backend.hf.space/docs" class="btn btn-primary btn-small" target="_blank">
+                                <i class="fas fa-file-alt"></i> API Docs
+                            </a>
+                            <a href="https://bafokengkhoali-ai-backend.hf.space/predict" class="btn btn-outline btn-small" target="_blank">
+                                Predict Endpoint
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-taxi text-primary"></i> EasyGo Ride-Hailing Platform</h3>
+                        <p class="text-muted" style="margin-bottom: 12px;">Full-Stack Mobility System</p>
+                        <p>End-to-end ride-hailing solution with user roles, dispatch intelligence, pricing logic, and dashboard analytics.</p>
                         <div class="tech-tags" style="margin: 15px 0;">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">XGBoost</span>
                             <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">Docker</span>
                         </div>
-                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: var(--text-light);"><strong>Features:</strong> Real-time tracking, ETA prediction, Demand forecasting, Fraud detection, Rate limiting, Redis caching</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: var(--text-light);"><strong>Highlights:</strong> Multi-dashboard flow, route tracking, and AI-backed prediction capabilities.</p>
                         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
                             <a href="https://github.com/Bafokengbaffy/easyGo-app" class="btn btn-primary btn-small" target="_blank">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                             <a href="https://easygols.web.app" class="btn btn-outline btn-small" target="_blank">
-                                <i class="fas fa-globe"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="card">
-                        <h3><i class="fas fa-brain text-primary"></i> Loan Prediction System</h3>
-                        <p class="text-muted" style="margin-bottom: 12px;">AI/ML System - 87.4% Accuracy</p>
-                        <p>Advanced machine learning system with explainable AI, 300+ personalized recommendations, 40+ business rule validation engine, and MySQL backend for data persistence.</p>
-                        <div class="tech-tags" style="margin: 15px 0;">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">XGBoost</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">SHAP</span>
-                            <span class="tech-tag">LIME</span>
-                        </div>
-                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: var(--text-light);"><strong>Performance:</strong> 87.4% Accuracy | 0.92 AUC-ROC | Bias detection & mitigation</p>
-                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="https://github.com/Bafokengbaffy/loan-prediction-system" class="btn btn-primary btn-small" target="_blank">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="card">
-                        <h3><i class="fas fa-palette text-primary"></i> EasyGo Frontend Prototype</h3>
-                        <p class="text-muted" style="margin-bottom: 12px;">Frontend UI/UX Design</p>
-                        <p>Responsive frontend prototype with complete user dashboards (Rider, Driver, Admin). Built with vanilla HTML5, CSS3, and modern JavaScript. Features South African market localization.</p>
-                        <div class="tech-tags" style="margin: 15px 0;">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive</span>
-                            <span class="tech-tag">Font Awesome</span>
-                        </div>
-                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: var(--text-light);"><strong>Features:</strong> Multi-role dashboards | Responsive design | Animations | Form validation</p>
-                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="https://github.com/Bafokengbaffy/easyGo" class="btn btn-primary btn-small" target="_blank">
-                                <i class="fab fa-github"></i> GitHub
+                                Live Demo
                             </a>
                         </div>
                     </div>
