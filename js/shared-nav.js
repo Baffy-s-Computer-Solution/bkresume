@@ -221,7 +221,7 @@ const initParallax = () => {
 
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        const elements = header.querySelectorAll('.profile-img, header h1, header h2');
+        const elements = header.querySelectorAll('.profile-img');
         
         elements.forEach((el, index) => {
             const yPos = scrolled * (0.5 + index * 0.1);
