@@ -6,20 +6,20 @@
    ======================================== */
 
 :root {
-    --primary-color: #6c5ce7;
-    --primary-dark: #5649d8;
-    --primary-light: #8b7ee0;
-    --secondary-color: #2d3436;
-    --accent-color: #fd79a8;
-    --light-color: #f8f9fa;
-    --light-gray: #f0f2f5;
-    --medium-gray: #e8ebed;
-    --dark-color: #343a40;
-    --text-color: #2d3436;
-    --text-light: #636e72;
-    --text-lighter: #909499;
-    --success-color: #00b894;
-    --danger-color: #d63031;
+    --primary-color: #0b7285;
+    --primary-dark: #075766;
+    --primary-light: #21a0b5;
+    --secondary-color: #172b4d;
+    --accent-color: #f08c46;
+    --light-color: #eef7f8;
+    --light-gray: #e5eef0;
+    --medium-gray: #d6e2e5;
+    --dark-color: #10233f;
+    --text-color: #24364b;
+    --text-light: #5d7180;
+    --text-lighter: #8da0ab;
+    --success-color: #198754;
+    --danger-color: #c94c4c;
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
     --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.15);
@@ -46,7 +46,9 @@ body {
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: var(--text-color);
     line-height: 1.8;
-    background-color: #fafbfc;
+    background-color: #f5f9f9;
+    background-image: linear-gradient(rgba(11, 114, 133, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(11, 114, 133, 0.035) 1px, transparent 1px);
+    background-size: 32px 32px;
     font-size: 16px;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -133,7 +135,7 @@ body {
    ======================================== */
 
 .navbar {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(250, 253, 253, 0.94);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
     height: 75px;
@@ -169,12 +171,22 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     transition: var(--transition);
 }
 
-.navbar-brand i {
-    font-size: 1.8rem;
+.brand-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    box-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .navbar-brand:hover {
@@ -265,7 +277,7 @@ body {
    ======================================== */
 
 header {
-    background: linear-gradient(135deg, rgba(21, 31, 68, 0.92), rgba(68, 57, 129, 0.95)), url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(9, 35, 57, 0.94), rgba(11, 114, 133, 0.88)), url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
     background-blend-mode: overlay;
     color: white;
     padding: 140px 2rem 90px;
@@ -319,7 +331,7 @@ header::after {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.3);
+    border: 5px solid rgba(255, 255, 255, 0.75);
     object-fit: cover;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
     display: block;
@@ -557,11 +569,11 @@ section:last-of-type {
 .card {
     background: white;
     border: 1px solid var(--medium-gray);
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: var(--shadow-sm);
-    padding: 2rem;
+    padding: 2.25rem;
     height: 100%;
-    transition: var(--transition-slow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     position: relative;
     overflow: hidden;
     animation: fadeInUp 0.8s ease;
@@ -581,7 +593,7 @@ section:last-of-type {
 }
 
 .card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-6px);
     box-shadow: var(--shadow-lg);
     border-color: var(--primary-light);
 }
@@ -598,10 +610,10 @@ section:last-of-type {
     align-items: center;
     justify-content: center;
     transition: var(--transition);
-    background: rgba(108, 92, 231, 0.08);
+    background: rgba(11, 114, 133, 0.09);
     width: 70px;
     height: 70px;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .card:hover .card-icon {
@@ -666,7 +678,7 @@ section:last-of-type {
     background: var(--primary-color);
     color: white;
     border-color: var(--primary-color);
-    box-shadow: 0 8px 24px rgba(108, 92, 231, 0.2);
+    box-shadow: 0 8px 20px rgba(11, 114, 133, 0.2);
 }
 
 .btn-primary:hover {
@@ -720,13 +732,13 @@ section:last-of-type {
 
 .tech-tag {
     display: inline-block;
-    background: linear-gradient(135deg, rgba(108, 92, 231, 0.1), rgba(108, 92, 231, 0.05));
+    background: rgba(11, 114, 133, 0.08);
     color: var(--primary-color);
     padding: 6px 14px;
     border-radius: 50px;
     font-size: 0.8rem;
     font-weight: 600;
-    border: 1px solid rgba(108, 92, 231, 0.2);
+    border: 1px solid rgba(11, 114, 133, 0.2);
     transition: var(--transition);
     letter-spacing: 0.3px;
 }
