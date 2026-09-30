@@ -351,6 +351,10 @@ header::after {
     box-shadow: var(--shadow-md);
 }
 
+#about-intro .row {
+    align-items: center;
+}
+
 .profile-img:hover {
     transform: scale(1.05) translateY(-5px);
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
@@ -1202,6 +1206,11 @@ footer p {
 
     .container {
         padding: 0;
+    }
+
+    #about-intro .about-profile-img {
+        width: min(100%, 260px);
+        margin-bottom: 1.5rem;
     }
 
     .section-title {
