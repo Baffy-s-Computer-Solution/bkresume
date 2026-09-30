@@ -340,6 +340,17 @@ header::after {
     transition: var(--transition);
 }
 
+.about-profile-img {
+    display: block;
+    width: min(100%, 360px);
+    aspect-ratio: 1;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-md);
+}
+
 .profile-img:hover {
     transform: scale(1.05) translateY(-5px);
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
@@ -512,7 +523,7 @@ header h2 {
 main {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0;
 }
 
 section {
@@ -908,7 +919,7 @@ footer p {
 
 .row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 2rem;
 }
 
@@ -1187,6 +1198,10 @@ footer p {
 
     section {
         padding: 2.5rem 1rem;
+    }
+
+    .container {
+        padding: 0;
     }
 
     .section-title {
