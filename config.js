@@ -12,7 +12,6 @@ const CONFIG = {
 
     // Social Links
     SOCIAL: {
-        FACEBOOK: process.env.FACEBOOK_URL || '',
         LINKEDIN: process.env.LINKEDIN_URL || '',
         WHATSAPP: process.env.WHATSAPP_NUMBER || '',
         GITHUB: process.env.GITHUB_URL || ''

@@ -764,6 +764,147 @@ section:last-of-type {
     border-color: rgba(108, 92, 231, 0.4);
 }
 
+.repo-access-note,
+.project-detail {
+    color: #43586c;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.networking-section {
+    background: linear-gradient(180deg, #f5f9f9 0%, #eaf3f4 100%);
+}
+
+.network-topology {
+    max-width: 980px;
+    margin: 0 auto 2.5rem;
+    padding: 2rem;
+    border-radius: 14px;
+    background: #142b45;
+    color: #f5fbff;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+.topology-node {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 220px;
+    padding: 1rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 10px;
+    background: #203c5a;
+    color: #eef7ff;
+}
+
+.topology-hq {
+    width: fit-content;
+    margin: 0 auto;
+    border-color: #71d1de;
+}
+
+.topology-label {
+    color: #8ee1e9;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.topology-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 1.25rem auto 0.5rem;
+    color: #d6e8f5;
+    font-size: 0.85rem;
+}
+
+.topology-links span {
+    flex: 1;
+}
+
+.topology-links span::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 22px;
+    margin: 0 auto 0.5rem;
+    background: #71d1de;
+}
+
+.topology-branches {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.topology-datacenter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: fit-content;
+    margin: 1.25rem auto 0;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+    color: #f5fbff;
+    font-weight: 700;
+}
+
+.topology-datacenter span {
+    color: #d6e8f5;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.network-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.network-skill-card {
+    padding: 1.6rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: var(--shadow-sm);
+}
+
+.network-skill-card h3 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-size: 1.15rem;
+}
+
+.network-skill-card h3 i {
+    margin-right: 0.4rem;
+    color: var(--primary-color);
+}
+
+.network-skill-card ul {
+    padding-left: 1.2rem;
+    color: #43586c;
+}
+
+.network-skill-card li + li {
+    margin-top: 0.55rem;
+}
+
+.networking-note {
+    max-width: 760px;
+    margin: 1.5rem auto 0;
+    color: #43586c;
+    text-align: center;
+}
+
 /* ========================================
    FORMS
    ======================================== */
@@ -1282,5 +1423,28 @@ footer p {
 
     .copyright {
         font-size: 0.75rem;
+    }
+
+    .network-topology {
+        padding: 1rem;
+    }
+
+    .topology-node {
+        min-width: 0;
+        width: 100%;
+        padding: 0.8rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .topology-branches {
+        gap: 0.6rem;
+    }
+
+    .topology-links {
+        font-size: 0.7rem;
+    }
+
+    .topology-datacenter {
+        font-size: 0.8rem;
     }
 }
