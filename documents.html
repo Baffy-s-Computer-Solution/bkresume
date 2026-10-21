@@ -44,7 +44,7 @@
     <header>
         <div class="header-content">
             <h1>Documentation Hub</h1>
-            <h2>Download CVs, API docs, and pen testing resources</h2>
+            <h2>Project documentation, API references, and security assessment summaries</h2>
         </div>
     </header>
 
@@ -52,15 +52,27 @@
         <section id="download-resources">
             <div class="container">
                 <div class="section-title">
-                    <h2>Downloadable Resources</h2>
-                    <p>I created these documents to explain the products, APIs, and technical work I have built and deployed.</p>
+                    <h2>Project Documents</h2>
+                    <p>Technical references for Career Connect Lesotho, its API and AI services, and my professional experience.</p>
                 </div>
                 <div class="row">
                     <div class="card">
-                        <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="card-icon"><i class="fas fa-id-card"></i></div>
                         <h3>Professional CV</h3>
-                        <p>High-impact resume layout with polished section styling, table formatting, and refined content presentation.</p>
-                        <a href="files/BAFOKENGKHOALICV.pdf" target="_blank" class="btn btn-primary btn-small">Download CV</a>
+                        <p>Current curriculum vitae covering experience, skills, education, and selected project work.</p>
+                        <a href="files/BAFOKENGKHOALICV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small">View CV (PDF)</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-diagram-project"></i></div>
+                        <h3>Career Connect Project Documentation</h3>
+                        <p>Project background, objectives, requirements, system design, and supporting technical analysis for the Lesotho career platform.</p>
+                        <a href="career%20connect%20documentation.docx" download class="btn btn-primary btn-small">Download Project Docs (DOCX)</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <h3>API & AI Models Reference</h3>
+                        <p>Developer reference covering API capabilities, model services, and documented AI workflows.</p>
+                        <a href="API%20and%20AI%20Models%20documentation.docx" download class="btn btn-primary btn-small">Download API & AI Docs (DOCX)</a>
                     </div>
                 </div>
             </div>
@@ -69,55 +81,50 @@
         <section id="live-docs" class="bg-light">
             <div class="container">
                 <div class="section-title">
-                    <h2>Live API & Model Docs</h2>
-                    <p>I documented the production endpoints so developers can understand how my live services are structured and tested.</p>
+                    <h2>Live Services</h2>
+                    <p>Public application and API references for reviewing the deployed services.</p>
                 </div>
                 <div class="row">
                     <div class="card">
                         <div class="card-icon"><i class="fas fa-server"></i></div>
-                        <h3>Career Connect API</h3>
-                        <p>Live frontend: <a href="http://career-connect-lesotho.web.app/" target="_blank" rel="noopener">career-connect-lesotho.web.app</a></p>
-                        <p>Backend: <a href="https://career-connect-backend-79v0.onrender.com" target="_blank" rel="noopener">career-connect-backend-79v0.onrender.com</a></p>
-                        <p>Health check: <a href="https://career-connect-backend-79v0.onrender.com/health" target="_blank" rel="noopener">/health</a></p>
-                        <p><strong>Endpoints:</strong> <code>GET /health</code>, <code>GET /</code>, <code>POST /api/auth/register</code>, <code>POST /api/auth/login</code>, <code>POST /api/auth/refresh-token</code>, <code>POST /api/company/jobs</code>, <code>GET /api/company/jobs</code>, <code>GET /api/user/:userId</code>, <code>GET /api/user/applications/my</code></p>
+                        <h3>Career Connect Lesotho</h3>
+                        <p>Live platform for students, employers, and career development stakeholders.</p>
+                        <p><strong>Application:</strong> <a href="https://career-connect-lesotho.web.app/" target="_blank" rel="noopener noreferrer">career-connect-lesotho.web.app</a></p>
+                        <p><strong>API health:</strong> <a href="https://career-connect-backend-79v0.onrender.com/health" target="_blank" rel="noopener noreferrer">Backend health check</a></p>
+                        <p><strong>Documented areas:</strong> authentication, job listings, applications, user profiles, and service health.</p>
                     </div>
                     <div class="card">
                         <div class="card-icon"><i class="fas fa-robot"></i></div>
-                        <h3>AI Service API</h3>
-                        <p>AI service endpoints are available on port <code>5002</code>.</p>
-                        <p><strong>Endpoints:</strong> <code>GET /health</code>, <code>GET /ready</code>, <code>GET /api/ai/analytics</code>, <code>GET /api/ai/prediction</code>, <code>GET /api/ai/recommendation</code>, <code>GET /api/ai/student-company</code>, <code>GET /api/ai/internship</code></p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
-                        <h3>Career Connect Pen Test Docs</h3>
-                        <p>I created this documentation to record my security testing process, findings, and hardening guidance for the career platform.</p>
-                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 1rem;">
-                            <a href="https://career-connect-lesotho.web.app/" target="_blank" class="btn btn-primary btn-small">Live App</a>
-                        </div>
-                        <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.95rem;">Private GitHub repository access available on request.</p>
+                        <h3>AI Service</h3>
+                        <p>Model-backed endpoints for analytics, predictions, recommendations, and student-to-company or internship matching.</p>
+                        <p><strong>Reference:</strong> <a href="API%20and%20AI%20Models%20documentation.docx" download>API & AI Models DOCX</a></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="doc-summary">
+        <section id="security-assessments">
             <div class="container">
                 <div class="section-title">
-                    <h2>Why I Created These Documents</h2>
-                    <p>I created these documents to make my technical work easier to understand, review, and evaluate.</p>
+                    <h2>Security Assessments</h2>
+                    <p>Authorized security review work, summarized here without publishing target-specific test commands or sensitive report details.</p>
                 </div>
                 <div class="row">
                     <div class="card">
-                        <h3>Fast Hiring Review</h3>
-                        <p>I keep my CV and project documentation available here so recruiters and technical leads can review my work directly.</p>
+                        <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Career Connect Lesotho API</h3>
+                        <p><strong>Scope:</strong> Production API, authentication and authorization, database rules, application controls, network exposure, and TLS configuration. The assessment record is dated February 17–18, 2026.</p>
+                        <p><strong>Tools documented:</strong> Nmap, OWASP ZAP, Burp Suite, Nikto, SSL Labs, Firebase CLI, custom Bash scripts, JWT Debugger, and Wappalyzer.</p>
+                        <p><strong>Outcome:</strong> The report documents security-control validation and remediation recommendations for the assessed backend.</p>
+                        <p class="repo-access-note">The assessment file contains operational test examples. A sanitized copy can be requested by email.</p>
                     </div>
                     <div class="card">
-                        <h3>Production-Ready APIs</h3>
-                        <p>I publish the live endpoints so developers can test integrations and see how I approach production API delivery.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Security & Pen Testing</h3>
-                        <p>I included the penetration-testing notes to show how I assess risk, document findings, and improve the security of my applications.</p>
+                        <div class="card-icon"><i class="fas fa-lock"></i></div>
+                        <h3>Motsamai Web Backend</h3>
+                        <p><strong>Scope:</strong> Black-box production API review, performed from Kali Linux (WSL) on October 21, 2026.</p>
+                        <p><strong>Kali tools used:</strong> Nmap for network and TLS review; cURL for HTTP and API checks; Nuclei for template-based vulnerability checks; FFUF for endpoint discovery; and Nikto for web-server checks.</p>
+                        <p><strong>Outcome:</strong> The report records four findings across severity levels and states that remediation was applied and checked in a follow-up validation.</p>
+                        <p class="repo-access-note">The source PDF is marked confidential and includes personal contact details and target-specific evidence, so it is not published here. Request an appropriately redacted copy by <a href="mailto:khoalibafokeng6@gmail.com">email</a>.</p>
                     </div>
                 </div>
             </div>
