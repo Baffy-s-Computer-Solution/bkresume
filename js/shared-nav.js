@@ -53,14 +53,23 @@ const handleNavbarScroll = () => {
 const updateActiveNav = () => {
     const currentPage = window.location.pathname.split('/').pop();
     const isHomePage = currentPage === '' || currentPage === 'index.html';
+    const sectionPages = {
+        'portfolio-loan.html': 'portfolio.html',
+        'portfolio-water.html': 'portfolio.html',
+        'certifications.html': 'documents.html'
+    };
+    const activePage = sectionPages[currentPage] || currentPage;
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href === currentPage || (isHomePage && (href === '/' || href === 'index.html'))) {
+        const isActive = href === activePage || (isHomePage && (href === '/' || href === 'index.html'));
+        if (isActive) {
             link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
         } else {
             link.classList.remove('active');
+            link.removeAttribute('aria-current');
         }
     });
 };

@@ -18,25 +18,40 @@
     <meta property="og:title" content="Smart Water Metering Project | Bafokeng Khoali">
     <meta property="og:description" content="An IoT smart water metering project featuring water consumption monitoring.">
     <meta property="og:url" content="https://bkresume.vercel.app/portfolio-water.html">
-    <meta property="og:image" content="https://bkresume.vercel.app/img/profile.jpg">
-    <meta property="og:image:alt" content="Portrait of Bafokeng Khoali">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://bkresume.vercel.app/img/og-image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bafokeng Khoali, IT specialist, penetration testing engineer, and full-stack developer in Lesotho">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Smart Water Metering Project | Bafokeng Khoali">
     <meta name="twitter:description" content="An IoT smart water metering project by Bafokeng Khoali.">
-    <meta name="twitter:image" content="https://bkresume.vercel.app/img/profile.jpg">
+    <meta name="twitter:image" content="https://bkresume.vercel.app/img/og-image.png">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bkresume.vercel.app/"},
+                {"@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://bkresume.vercel.app/portfolio.html"},
+                {"@type": "ListItem", "position": 3, "name": "Smart Water Metering", "item": "https://bkresume.vercel.app/portfolio-water.html"}
+            ]
+        }
+    </script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/shared-styles.css">
 
     <!-- Custom CSS -->
     <style>
         :root {
-            --primary-color: #3498db;
-            --secondary-color: #2d3436;
-            --accent-color: #2ecc71;
+            --primary-color: #0b7285;
+            --secondary-color: #172b4d;
+            --accent-color: #f08c46;
             --light-color: #f8f9fa;
             --dark-color: #343a40;
         }
@@ -49,10 +64,11 @@
         }
 
         .project-header {
-            background: linear-gradient(135deg, var(--primary-color), #2980b9);
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
             color: white;
             padding: 5rem 0;
             margin-bottom: 3rem;
+            margin-top: 75px;
         }
 
         .project-title {
@@ -72,6 +88,8 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
             transition: transform 0.3s ease;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
         }
 
         .project-image:hover {
@@ -116,7 +134,7 @@
         }
 
         .tech-badge {
-            background: rgba(52, 152, 219, 0.1);
+            background: rgba(11, 114, 133, 0.1);
             color: var(--primary-color);
             padding: 0.5rem 1rem;
             border-radius: 50px;
@@ -135,9 +153,9 @@
         }
 
         .btn-primary-custom:hover {
-            background: #2980b9;
+            background: #075766;
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 5px 15px rgba(11, 114, 133, 0.3);
         }
 
         .btn-outline-custom {
@@ -152,7 +170,7 @@
             background: var(--primary-color);
             color: white;
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 5px 15px rgba(11, 114, 133, 0.3);
         }
 
         .back-link {
@@ -189,7 +207,8 @@
 
         .screenshot-item img {
             width: 100%;
-            height: auto;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
             display: block;
         }
 
@@ -200,15 +219,60 @@
             display: block;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
         }
 
-        @media (max-width: 768px) {
+        .project-content .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            margin-right: -0.75rem;
+            margin-left: -0.75rem;
+        }
+
+        .project-content {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+
+        .project-actions .btn {
+            width: auto;
+            white-space: normal;
+        }
+
+        @media (max-width: 960px) {
+            .project-header {
+                margin-top: 60px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .project-content {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+
+            .project-header {
+                padding: 3rem 0;
+            }
+
             .project-title {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .project-subtitle {
                 font-size: 1rem;
+            }
+
+            .project-actions {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .project-actions .btn {
+                width: 100%;
             }
 
             .screenshot-gallery {
@@ -226,20 +290,6 @@
 
     gtag('config', 'G-ZE4RTB3WFB');
 </script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    // Basic configuration
-    gtag('config', 'G-ZE4RTB3WFB');
-
-    // Optional: Track page views for SPA-like behavior
-    gtag('config', 'G-ZE4RTB3WFB', {
-        'page_title': document.title,
-        'page_location': window.location.href
-    });
-</script>
 </head>
 
 <body>
@@ -250,16 +300,36 @@
     </iframe>
 </noscript>
 
-    <!-- Project Header -->
-    <div class="project-header">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">
+                <span class="brand-mark" aria-hidden="true">BK</span> Bafokeng Khoali
+            </a>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/about.html" class="nav-link">About</a></li>
+                <li><a href="/skills.html" class="nav-link">Skills</a></li>
+                <li><a href="/projects.html" class="nav-link">Projects</a></li>
+                <li><a href="/portfolio.html" class="nav-link active" aria-current="page">Portfolio</a></li>
+                <li><a href="/documents.html" class="nav-link">Documents</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <header class="project-header">
         <div class="container">
             <a href="/#projects" class="back-link">
                 <i class="fas fa-arrow-left me-2"></i> Back to Projects
             </a>
             <h1 class="project-title">Smart Water Metering System</h1>
             <p class="project-subtitle">IoT-based solution for water consumption monitoring with AI analytics and real-time alerts</p>
-            <div class="d-flex gap-3">
-                <a href="https://github.com/Baffy-s-Computer-Solution/smart_water_metering_system" class="btn btn-primary-custom" target="_blank">
+            <div class="project-actions d-flex flex-wrap gap-3">
+                <a href="https://github.com/Baffy-s-Computer-Solution/smart_water_metering_system" class="btn btn-primary-custom" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github me-2"></i> View on GitHub
                 </a>
                 <a href="/#contact" class="btn btn-outline-custom">
@@ -267,10 +337,17 @@
                 </a>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- Project Content -->
-    <div class="container">
+    <nav class="seo-breadcrumb" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li aria-current="page">Smart Water Metering</li>
+        </ol>
+    </nav>
+    <main class="container project-content">
         <div class="row">
             <div class="col-lg-8">
                 <!-- Project Description -->
@@ -353,7 +430,7 @@
                         through Firebase to the AI processing engine, with results visualized in the mobile app.
                     </p>
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                         alt="System Architecture" class="system-architecture">
+                         alt="" class="system-architecture" loading="lazy" decoding="async">
                 </section>
 
                 <!-- Technical Details -->
@@ -386,9 +463,9 @@
 
             <div class="col-lg-4">
                 <!-- Project Image -->
-                <div class="sticky-top" style="top: 20px;">
+                <div class="sticky-top" style="top: 90px;">
                     <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                         alt="Smart Water Metering System" class="img-fluid project-image">
+                         alt="" class="img-fluid project-image" loading="lazy" decoding="async">
 
                     <!-- Project Details -->
                     <div class="card mb-4">
@@ -412,7 +489,7 @@
                                     <span>Apache 2.0</span>
                                 </li>
                             </ul>
-                        </div>
+                        </main>
                     </div>
 
                     <!-- Challenges -->
@@ -433,19 +510,19 @@
 
         <!-- Screenshots -->
         <section class="my-5">
-            <h2 class="section-title">Application Screenshots</h2>
+            <h2 class="section-title">Related Project Imagery</h2>
             <div class="screenshot-gallery">
                 <div class="screenshot-item">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-                         alt="Dashboard View">
+                         alt="" loading="lazy" decoding="async">
                 </div>
                 <div class="screenshot-item">
                     <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-                         alt="Consumption Analytics">
+                         alt="" loading="lazy" decoding="async">
                 </div>
                 <div class="screenshot-item">
                     <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-                         alt="Alert Notifications">
+                         alt="" loading="lazy" decoding="async">
                 </div>
             </div>
         </section>
@@ -471,13 +548,13 @@
         <div class="container text-center">
             <p>© <script>document.write(new Date().getFullYear())</script> Bafokeng Khoali. All Rights Reserved.</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="https://wa.me/26663210786" target="_blank" class="text-white">
+                <a href="https://wa.me/26663210786" target="_blank" rel="noopener noreferrer" class="text-white" aria-label="Contact Bafokeng Khoali on WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/bafokeng-khoali-5933351b1/" target="_blank" class="text-white">
+                <a href="https://www.linkedin.com/in/bafokeng-khoali-749337437/" target="_blank" rel="noopener noreferrer" class="text-white" aria-label="LinkedIn profile">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:khoalibafokeng6@gmail.com" class="text-white">
+                <a href="mailto:khoalibafokeng6@gmail.com" class="text-white" aria-label="Email Bafokeng Khoali">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -486,6 +563,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/shared-nav.js"></script>
 </body>
 
 </html>
