@@ -51,12 +51,13 @@ const handleNavbarScroll = () => {
  * Highlights current page in navigation
  */
 const updateActiveNav = () => {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = window.location.pathname.split('/').pop();
+    const isHomePage = currentPage === '' || currentPage === 'index.html';
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+        if (href === currentPage || (isHomePage && (href === '/' || href === 'index.html'))) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
@@ -78,6 +79,7 @@ const initMobileMenu = () => {
     mobileToggle.addEventListener('click', () => {
         mobileToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
+        mobileToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
     });
 
     // Close menu when link is clicked
@@ -85,6 +87,7 @@ const initMobileMenu = () => {
         link.addEventListener('click', () => {
             mobileToggle.classList.remove('active');
             navMenu.classList.remove('active');
+            mobileToggle.setAttribute('aria-expanded', 'false');
         });
     });
 
@@ -93,6 +96,7 @@ const initMobileMenu = () => {
         if (!e.target.closest('.navbar')) {
             mobileToggle.classList.remove('active');
             navMenu.classList.remove('active');
+            mobileToggle.setAttribute('aria-expanded', 'false');
         }
     });
 };

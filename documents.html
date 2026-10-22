@@ -4,13 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Documentation - Bafokeng Khoali">
-    <meta name="description" content="Download CVs, API documentation, and pen testing documentation for Bafokeng Khoali's projects.">
+    <meta name="description" content="Browse Bafokeng Khoali's CV, project documentation, API references, and public security assessment summaries.">
     <meta name="keywords" content="documentation, CV download, API docs, pen testing, career connect, AI backend, security docs">
-    <meta property="og:title" content="Documentation - Bafokeng Khoali">
-    <meta property="og:description" content="Access CV downloads, API docs, and career project documentation.">
+    <meta name="author" content="Bafokeng Khoali">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#3b3f87">
-    <title>Documentation - Bafokeng Khoali</title>
+    <link rel="canonical" href="https://bkresume.vercel.app/documents.html">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta property="og:site_name" content="Bafokeng Khoali">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Project Documents &amp; CV | Bafokeng Khoali">
+    <meta property="og:description" content="Browse Bafokeng Khoali's CV, project documentation, API references, and public security assessment summaries.">
+    <meta property="og:url" content="https://bkresume.vercel.app/documents.html">
+    <meta property="og:image" content="https://bkresume.vercel.app/img/profile.jpg">
+    <meta property="og:image:alt" content="Portrait of Bafokeng Khoali">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Project Documents &amp; CV | Bafokeng Khoali">
+    <meta name="twitter:description" content="Browse the CV, project documentation, and API references of Bafokeng Khoali.">
+    <meta name="twitter:image" content="https://bkresume.vercel.app/img/profile.jpg">
+    <title>Project Documents &amp; CV | Bafokeng Khoali</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,11 +33,11 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="index.html" class="navbar-brand">
+            <a href="/" class="navbar-brand">
                 <span class="brand-mark" aria-hidden="true">BK</span> Bafokeng Khoali
             </a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="/" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="skills.html" class="nav-link">Skills</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
@@ -33,7 +45,7 @@
                 <li><a href="documents.html" class="nav-link active">Documents</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <button class="mobile-toggle" title="Toggle navigation">
+            <button class="mobile-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>

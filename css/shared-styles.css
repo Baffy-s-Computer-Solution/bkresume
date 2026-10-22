@@ -556,6 +556,33 @@ section:last-of-type {
     letter-spacing: -0.5px;
 }
 
+.section-title h1 {
+    font-size: 2.8rem;
+    color: var(--secondary-color);
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+header.section-title h1 {
+    color: white;
+}
+
+.section-title h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+    border-radius: 4px;
+    transform: translateX(-50%);
+    animation: scaleIn 0.8s ease 0.4s backwards;
+}
+
 .section-title h2::after {
     content: '';
     position: absolute;
@@ -567,6 +594,12 @@ section:last-of-type {
     border-radius: 4px;
     transform: translateX(-50%);
     animation: scaleIn 0.8s ease 0.4s backwards;
+}
+
+:focus-visible {
+    outline: 3px solid var(--primary-dark);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px #ffffff;
 }
 
 .section-title p {
@@ -1235,10 +1268,12 @@ footer p {
         padding: 3.5rem 0;
     }
 
+    .section-title h1,
     .section-title h2 {
         font-size: 2rem;
     }
 
+    .section-title h1::after,
     .section-title h2::after {
         width: 60px;
     }
@@ -1358,10 +1393,12 @@ footer p {
         margin-bottom: 2rem;
     }
 
+    .section-title h1,
     .section-title h2 {
         font-size: 1.5rem;
     }
 
+    .section-title h1::after,
     .section-title h2::after {
         width: 50px;
         bottom: -10px;

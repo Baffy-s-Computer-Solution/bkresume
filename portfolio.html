@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Bafokeng Khoali - Portfolio">
-    <meta name="description" content="Portfolio of Bafokeng Khoali featuring full-stack apps, AI systems, and development work.">
-    <meta name="keywords" content="Bafokeng Khoali, portfolio, full-stack, AI, web apps, development">
+    <meta name="description" content="Explore Bafokeng Khoali's selected software projects, including web applications, AI systems, and IT infrastructure.">
     <meta name="author" content="Bafokeng Khoali">
     <meta name="robots" content="index, follow">
-
+    <meta name="theme-color" content="#3b3f87">
+    <link rel="canonical" href="https://bkresume.vercel.app/portfolio.html">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta property="og:site_name" content="Bafokeng Khoali">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio | Bafokeng Khoali">
+    <meta property="og:description" content="Selected software projects, including web applications, AI systems, and IT infrastructure.">
+    <meta property="og:url" content="https://bkresume.vercel.app/portfolio.html">
+    <meta property="og:image" content="https://bkresume.vercel.app/img/profile.jpg">
+    <meta property="og:image:alt" content="Portrait of Bafokeng Khoali">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Portfolio | Bafokeng Khoali">
+    <meta name="twitter:description" content="Selected software projects, web applications, AI systems, and IT infrastructure work.">
+    <meta name="twitter:image" content="https://bkresume.vercel.app/img/profile.jpg">
     <title>Portfolio | Bafokeng Khoali</title>
-    <link rel="canonical" href="https://bafokengkhoali.com/portfolio.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +33,9 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="index.html" class="navbar-brand"><span class="brand-mark" aria-hidden="true">BK</span> Bafokeng Khoali</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+            <a href="/" class="navbar-brand"><span class="brand-mark" aria-hidden="true">BK</span> Bafokeng Khoali</a>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="/" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="skills.html" class="nav-link">Skills</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
@@ -33,7 +43,7 @@
                 <li><a href="documents.html" class="nav-link">Documents</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <button class="mobile-toggle" title="Toggle navigation">
+            <button class="mobile-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,11 +53,12 @@
 
     <header id="portfolio" class="section-title">
         <div class="container">
-            <h2>Featured Work</h2>
+            <h1>Featured Work</h1>
             <p>Modern applications and systems built for business efficiency, data insights, and user-first digital experiences.</p>
         </div>
     </header>
 
+    <main>
     <section class="container">
         <div class="row">
             <article class="card">
@@ -71,15 +82,31 @@
 
             <article class="card">
                 <span class="card-icon"><i class="fas fa-chart-line"></i></span>
-                <h3>Loan Prediction API</h3>
-                <p>AI-powered prediction service using machine learning to score loan eligibility and enable faster finance decisions.</p>
+                <h3>Loan Approval Prediction</h3>
+                <p>Machine-learning project for predicting loan approval decisions, with explainable AI insights and a MySQL backend.</p>
                 <div class="tech-tags">
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Flask</span>
                     <span class="tech-tag">scikit-learn</span>
-                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">MySQL</span>
                 </div>
-                <a href="https://github.com/Baffy-s-Computer-Solution/Loan-Prediction" class="btn btn-secondary" target="_blank">View Repo</a>
+                <div class="project-links">
+                    <a href="portfolio-loan.html" class="btn btn-outline">Project details</a>
+                    <a href="https://github.com/Baffy-s-Computer-Solution/Loan-Prediction" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View repository</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <span class="card-icon"><i class="fas fa-tint" aria-hidden="true"></i></span>
+                <h3>Smart Water Metering System</h3>
+                <p>IoT project focused on water-consumption monitoring, with sensor data, cloud services, and AI analytics described in its case study.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">IoT</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">AI</span>
+                </div>
+                <a href="portfolio-water.html" class="btn btn-outline">Project details</a>
             </article>
 
             <article class="card">
@@ -112,14 +139,16 @@
         </div>
     </section>
 
+    </main>
+
     <footer>
         <div class="footer-content">
             <p>Ready to build your next digital solution? I design and develop software for growth-focused businesses.</p>
             <p style="margin-bottom: 15px; opacity: 0.85;">Note: selected GitHub repositories are private and can be shared on request for relevant projects.</p>
             <div class="footer-social-links">
-                <a href="https://github.com/Baffy-s-Computer-Solution/" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/bafokeng-khoali-749337437/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:bafokengkhoali@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Baffy-s-Computer-Solution/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/bafokeng-khoali-749337437/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:bafokengkhoali@gmail.com" aria-label="Email Bafokeng Khoali"><i class="fas fa-envelope" aria-hidden="true"></i></a>
             </div>
             <p class="copyright">&copy; <span id="year"></span> Bafokeng Khoali. All rights reserved.</p>
         </div>
