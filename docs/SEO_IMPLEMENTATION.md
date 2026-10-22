@@ -34,7 +34,7 @@ The homepage's Person JSON-LD identifies Bafokeng Khoali, the two professional r
 ## Validation status
 
 - Implemented locally: route-specific metadata, canonical alignment, social tags, JSON-LD, favicon, robots policy, sitemap, accessibility refinements, and legacy-page noindex.
-- Production endpoints were reachable before these local changes: the homepage, robots.txt, and sitemap returned HTTP 200 from Vercel. This confirms the existing deployment and endpoints only; it does not verify the new local files in production.
+- Live deployment was verified after push `0971049`: the homepage, social preview image, sitemap (ten URLs), and robots.txt returned HTTP 200. All ten public routes loaded without horizontal overflow at 360px and 390px.
 - Local validation passed: sitemap XML parsed with ten canonical URLs; robots.txt matched the public crawl policy; all ten public HTML pages had unique titles/descriptions, canonical URLs, and exactly one H1; homepage JSON-LD and all breadcrumb JSON-LD parsed; all pages use English language markup and the 1200×630 share image; and local HTML links and asset paths resolved, including the CV PDF.
 - Responsive browser checks covered all ten public routes at 360, 390, 768, 960, 1024, 1280, and 1440px (70 route/viewport combinations) with no horizontal overflow. The mobile navigation opened and closed with its `aria-expanded` state synchronized, and certificate panels fit a 360px viewport.
 - `git diff --check` passed. `package.json` has no build, lint, or test scripts, so a production build could not be run; deployment serves the static files directly.
